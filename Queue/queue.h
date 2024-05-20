@@ -1,8 +1,8 @@
 #pragma once
-#include<stdio.h>
-#include<stdbool.h>
-#include<stdlib.h>
-#include<string.h>
+//#include<stdio.h>
+//#include<stdbool.h>
+//#include<stdlib.h>
+//#include<string.h>
 #include<iostream>
 using namespace std;
 
@@ -49,21 +49,6 @@ public:
 	{
 		return _num;
 	}
-	//入队列
-	//void Push(const T1& a)
-	//{
-	//	if (isFull())
-	//	{
-	//		T1* _new = new T1[_size * 2]{};
-	//		memcpy(_new, _arr, _size * sizeof(T1));
-	//		delete[] _arr;
-	//		_arr = _new;
-	//		_size *= 2;
-	//		printf("扩容了！\n");
-	//	}
-	//	_arr[_num] = a;
-	//	++_num;
-	//}
 
 	void Push(const T1& a)
 	{
@@ -103,6 +88,7 @@ private:
 	T1* _head;//头指针
 	T1* _tail;//尾指针
 	bool _state;//队满标志
+	
 };
 
 

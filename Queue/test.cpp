@@ -31,5 +31,6 @@ int main()
 		++test1[i];
 		cout << test1[i] << " ";
 	}
+
 	return 0;
 }
